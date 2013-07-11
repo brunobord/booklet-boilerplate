@@ -1,1 +1,173 @@
-My Page
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Introduction to yout project</title>
+	<link href="./vendor/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="./vendor/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./static/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container">
+
+	<div class="row page-header">
+		<h1>Introduction to yout project</h1>
+	</div>
+
+	<div class="row">
+		<section class="span3">
+			<ul class="nav nav-list">
+				<li class="active"><a href="./">Home</a>
+				
+				
+					<li class="nav-header">First section</li>
+				
+				
+				
+					<li ><a href="./quickstart/">Quickstart</a></li>
+				
+				
+					<li class="nav-header">Next section</li>
+				
+				
+				
+					<li ><a href="./chapter/">Chapter 1</a></li><ul class="nav nav-list">
+				
+					<li ><a href="./subchapter/">Sub chapter</a></li>
+				
+				
+					<li ><a href="./othersub/">Other</a></li>
+				</ul>
+				
+				
+					<li ><a href="./credits/">Credits</a></li>
+				
+			</ul>
+		</section>
+
+		<article class="span9">
+			<h2 id="markdown">Markdown</h2>
+<p>Here you can describe your project, using a simple Markdown file, and put
+<a href="https://github.com/">links</a> and other cool markdown stuff.</p>
+<p>Your booklet source files (markdown documents) should be in the <code>src</code> directory.</p>
+<p>This is a Github-flavored markdown parser, so you can add:</p>
+<blockquote>
+<p>Quotes to enhance your text.</p>
+</blockquote>
+<p>or maybe code, if you like:</p>
+<pre><code class="python">print('hello world')
+</code></pre>
+
+<hr />
+<p>Tables are very very handy:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Stuff</th>
+<th align="right">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Row 1</td>
+<td align="right">These boots</td>
+</tr>
+<tr>
+<td align="left">Row 2</td>
+<td align="right">are made</td>
+</tr>
+<tr>
+<td align="left">Other rows</td>
+<td align="right">for walking, and that all what they do</td>
+</tr>
+</tbody>
+</table>
+<h2 id="markdown-extensions">Markdown extensions</h2>
+<p>This boilerplate project comes with handy extensions:</p>
+<h3 id="fragments">Fragments</h3>
+<p>Put fragments that could be used more than once in your booklet, and "include"
+them in several documents.</p>
+<p>Step 1: put a file in your <code>src/fragments</code> directory. For example,
+<code>fragment-test.md</code>. Edit its content, using the same Markdown syntax.</p>
+<p>Step 2: add this line in a document:</p>
+<pre><code>~~fragment-test.md~~
+</code></pre>
+
+<p>This will add the fragment to the target document.</p>
+<h3 id="admonitions">Admonitions</h3>
+<p>Available pre-built ReST-like admonitions:</p>
+<ul>
+<li>note</li>
+<li>rule</li>
+<li>info</li>
+<li>warning</li>
+<li>handwritten</li>
+</ul>
+<pre><code>    !!! note
+
+        This is a note and this will be transformed into a &quot;div.note&quot; HTML tag
+        container.
+</code></pre>
+
+<p>will be generated as:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is a note and this will be transformed into a "div.note" HTML tag
+container.</p>
+</div>
+<p>If you want, you may add a custom title to your admonition:</p>
+<pre><code>    !!! info &quot;Helpful reminder&quot;
+
+        You are reminded that you can add titles.
+</code></pre>
+
+<div class="admonition info">
+<p class="admonition-title">Helpful reminder</p>
+<p>You are reminded that you can add titles.</p>
+</div>
+<p>You can add as many admonition as you want, you'll only have to define the CSS
+look and feel in the <code>style.css</code> file. The sky is the limit.</p>
+<h4 id="samples">Samples</h4>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This is a warning</p>
+</div>
+<div class="admonition handwritten">
+<p class="admonition-title">example</p>
+<p>Handwritten text is so pretty.</p>
+</div>
+<h2 id="navigation">Navigation</h2>
+<p>another useful tool is the navigation toolkit. Edit the <code>navigation.json</code> file
+to fit your architecture. It's a basic list that will generate a nav tree. There
+are two types of "rows": captions and navigation items.</p>
+<pre><code>    {&quot;caption&quot;: &quot;First section&quot;}
+</code></pre>
+
+<p>This will be rendered as a simple link-less tree item, pretty much like a
+separator.</p>
+<pre><code>    {&quot;url&quot;: &quot;quickstart&quot;, &quot;caption&quot;: &quot;Quickstart&quot;}
+</code></pre>
+
+<p>This will produce a link to the content of the <code>quickstart.md</code> file. The target
+URL will be <code>/quickstart/</code>.</p>
+		</article>
+
+	</div>
+
+	<section class="row">
+	<footer class="footer">
+		<p><small>Generated on Fri, 12 Jul 2013 00:21</small></p>
+	</footer>
+	</section>
+</div>
+
+<script type="text/javascript" src="./vendor/js/jquery.min.js"></script>
+<script type="text/javascript" src="./vendor/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$('table').addClass('table-striped').addClass('table');
+</script>
+
+</body>
+</html>
