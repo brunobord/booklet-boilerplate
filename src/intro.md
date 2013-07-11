@@ -1,4 +1,4 @@
-Title: Introduction to yout project
+Title: Introduction to your project
 Summary: Help page for the impatient
 
 ## Markdown
